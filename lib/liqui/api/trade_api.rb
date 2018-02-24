@@ -36,8 +36,8 @@
 
 module Liqui
   class TradeAPI < API
-    if File.exists? 'wex-api-key.yml'
-      KEY = YAML::load File.open 'wex-api-key.yml'
+    if File.exists? 'liqui-api-key.yml'
+      KEY = YAML::load File.open 'liqui-api-key.yml'
 
       class << self
         def new_from_keyfile
